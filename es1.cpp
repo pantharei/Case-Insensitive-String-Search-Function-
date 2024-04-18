@@ -24,6 +24,7 @@ size_t Find(
  Case searchCase = Case::INSENSITIVE,//Choose case sensitive/insensitive search
  size_t offset = 0 ) {                //Start the search from this offset
      //Implementation
+    if(searchCase == Case::INSENSITIVE){
     size_t index{};
     std::string tmp{search_string};
 
@@ -48,6 +49,10 @@ size_t Find(
      of the substring, else std::string::npos
      */
     return index;
+    }else{
+        size_t index = source.find(search_string);
+        return index;
+    }
 }
 //Note that, 
 //we don't have direct write access to the raw string 
@@ -71,7 +76,7 @@ int main(){
     std::cout << std::endl;
 
     prova = "NaMe";
-    check = Find(source,prova);
+    check = Find(source,prova,Case::SENSITIVE);
     print_result(check);
 
     return 0;
