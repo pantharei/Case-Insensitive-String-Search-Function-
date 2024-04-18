@@ -1,4 +1,4 @@
-# Funzione di Ricerca di Stringhe con Sensibilità e Insensibilità alle Maiuscole e Minuscole
+# Funzione di Ricerca di Stringhe Sensibile e Insensibile alle Maiuscole e Minuscole
 ### (Case-Sensitive and Case-Insensitive String Search Function)
 
 Questo programma implementa una funzione di ricerca di stringhe in una stringa di origine, consentendo di scegliere tra una ricerca sensibile e insensibile alle maiuscole e minuscole. È utile quando si desidera trovare una sottostringa all'interno di una stringa, prendendo in considerazione o ignorando la differenza tra maiuscole e minuscole.
